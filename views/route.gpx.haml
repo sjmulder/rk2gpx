@@ -1,0 +1,13 @@
+!!! XML
+%gpx{:version => "1.1",
+     :creator => "RunKeeper-to-GPX - http://rk2gpx.sjmulder.nl",
+     :xmlns   => "http://www.topografix.com/GPX/1/1",
+     "xmlns:xsi" => "http://www.w3.org/2001/XMLSchema-instance",
+     "xsi:schemaLocation" => "http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"}
+	%trk
+		%name= @route.title
+		%trkseg
+			- @route.points.each do |wp|
+				%trkpt{:lat => wp.lat,
+				       :lon => wp.long}
+					%ele= wp.elevation

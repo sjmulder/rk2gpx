@@ -1,0 +1,48 @@
+(function() {
+	if (!document.getElementsByClassName) {
+		alert('Your browser is currently unsupported (no getElementByClassName) – consider upgrading.');
+		return;
+	}
+	if (!window.JSON) {
+		alert('Your browser is currently unsupported (no JSON) – consuder upgrading.');
+		return;
+	}
+
+	var model = {} 
+	
+	var routeTitleElems = document.getElementsByClassName('routeTitle');
+	if (routeTitleElems.length == 0) {
+		alert('Could not get route title from page (no route title element) – are you sure this is a RunKeeper route page?');
+		return;
+	}
+	var routeTitleElem = routeTitleElems[0];
+	if (routeTitleElem.childNodes.length < 3) {
+		alert('Could not get route title from page (child node not found) – are you sure this is a RunKeeper route page?');
+		return;
+	}
+	model.title = routeTitleElem.childNodes[2].textContent.replace(/^\s+|\s+$/g, '');
+
+	if (!window.mapController) {
+		alert('Could not get route points from page (no map) – are you sure this is a RunKeeper route page?');
+		return;	
+	}
+	if (!mapController.model) {
+		alert('Could not get route points from page (no model) – are you sure this is a RunKeeper route page?');
+		return;	
+	}
+	model.points = mapController.model.initialRoutePoints;
+	if (!model.points) {
+		alert('Could not get route points from page (no route points) – are you sure this is a RunKeeper route page?');
+		return;		
+	}
+	
+	var form = document.createElement('form');
+	form.setAttribute('method', 'post');
+	form.setAttribute('action', 'http://localhost:4567/route')
+	var field = document.createElement('input');
+	field.setAttribute('type', 'hidden');
+	field.setAttribute('name', 'json');
+	field.setAttribute('value', JSON.stringify(model));
+	form.appendChild(field);
+	form.submit();
+})();

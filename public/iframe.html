@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Downloading | Runkeeper-to-GPX</title>
+<script>	
+	var json = parent.document.getElementById('json').value;
+	var form = document.createElement('form');
+	form.setAttribute('method', 'post');
+	form.setAttribute('action', 'http://localhost:4567/route.gpx')
+	var field = document.createElement('input');
+	field.setAttribute('type', 'hidden');
+	field.setAttribute('name', 'json');
+	field.setAttribute('value', json);
+	form.appendChild(field);
+	form.submit();
+</script>

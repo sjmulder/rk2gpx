@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Route | Runkeeper-to-GPX</title>
+<form action="route.gpx" method="post">
+	<input type="hidden" id="json" name="json" value="<%=h @json %>">
+	<input type="submit" value="Download">
+</form>
+<iframe src="iframe.html" style="display: none">
