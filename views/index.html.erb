@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Runkeeper-to-GPX</title>
+<a id="bookmarklet" href="javascript:<%= bookmarklet %>">Download GPX</a>
+<script>
+	var bookmarklet = document.getElementById('bookmarklet');
+	bookmarklet.addEventListener('click', function(e) {
+		alert('Drag this to your bookmarks bar and click it whenever you want to download a route on RunKeeper.');
+		e.preventDefault();
+	}, false);
+</script>

@@ -32,10 +32,24 @@ end
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html
+
+  def host
+  	settings.environment == 'production' ?
+  		'rk2gpx.sjmulder.nl' :
+  		'localhost:4567'
+  end
+
+  def bookmarklet
+  	"(function(){var d=document,s=d.createElement('script');s.setAttribute('src','http://#{host}/bm.js');d.body.appendChild(s);})()"
+  end
 end
 
 get '/' do 
-	send_file 'public/index.html'
+	erb :'index.html'
+end
+
+get '/bm.js' do
+	erb :'bm.js'
 end
 
 post '/route' do
