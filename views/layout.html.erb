@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>RunKeeper-to-GPX</title>
+<link rel="stylesheet" href="/style.css">
+
+<h1><a href="/">RunKeeper-to-GPX</a></h1>
+
+<section class="main">
+	<%= yield %>
+	<hr>
+	<small>&copy; Hyzkia. This site and Hyzkia are not affiliated or endorsed by RunKeeper.</small>
+</section>
+
+<script>
+	var bookmarklet = document.getElementById('bookmarklet');
+	bookmarklet.addEventListener('click', function(e) {
+		alert('Drag this to your bookmarks bar and click it whenever you want to download a route on RunKeeper.');
+		e.preventDefault();
+	}, false);
+</script>

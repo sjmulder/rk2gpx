@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>RunKeeper-to-GPX</title>
+<p>Convert your <a href="http://runkeeper.com">RunKeeper</a> routes to GPX for use on your Garmin or other mapping device.</div>
 
-<p>This site lets you convert your <a href="http://runkeeper.com">RunKeeper</a> routes to GPX tracks so you can load your carefully plotted map onto your Garmin or other mapping device.</p>
+<p><strong>To install:</strong> drag the bookmarklet below to your bookmarks bar:</p>
 
-<p>Simply drag the bookmarklet below to your bookmarks bar:</p>
-
-<p><a id="bookmarklet" href="javascript:<%= bookmarklet %>">Download GPX</a></p>
-
-<small>RunKeeper-to-GPX was developed by Hyzkia and is not affiliated with RunKeeper.</small>
-
-<script>
-	var bookmarklet = document.getElementById('bookmarklet');
-	bookmarklet.addEventListener('click', function(e) {
-		alert('Drag this to your bookmarks bar and click it whenever you want to download a route on RunKeeper.');
-		e.preventDefault();
-	}, false);
-</script>
+<p class="bookmarkletWrapper"><a id="bookmarklet" href="javascript:<%= bookmarklet %>">Download GPX</a></p>

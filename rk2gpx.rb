@@ -29,6 +29,8 @@ class Waypoint
 	attr :elevation, true
 end
 
+set :erb, :layout => :'layout.html'
+
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html
@@ -49,7 +51,7 @@ get '/' do
 end
 
 get '/bm.js' do
-	erb :'bm.js'
+	erb :'bm.js', :layout => false
 end
 
 post '/route' do
