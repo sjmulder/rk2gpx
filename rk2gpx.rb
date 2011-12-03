@@ -36,7 +36,7 @@ helpers do
   alias_method :h, :escape_html
 
   def host
-  	settings.environment == 'production' ?
+  	settings.environment == :production ?
   		'rk2gpx.hyzkia.com' :
   		'localhost:4567'
   end
