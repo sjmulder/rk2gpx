@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Runkeeper-to-GPX</title>
-<a id="bookmarklet" href="javascript:<%= bookmarklet %>">Download GPX</a>
+<title>RunKeeper-to-GPX</title>
+
+<p>This site lets you convert your <a href="http://runkeeper.com">RunKeeper</a> routes to GPX tracks so you can load your carefully plotted map onto your Garmin or other mapping device.</p>
+
+<p>Simply drag the bookmarklet below to your bookmarks bar:</p>
+
+<p><a id="bookmarklet" href="javascript:<%= bookmarklet %>">Download GPX</a></p>
+
+<small>RunKeeper-to-GPX was developed by Hyzkia and is not affiliated with RunKeeper.</small>
+
 <script>
 	var bookmarklet = document.getElementById('bookmarklet');
 	bookmarklet.addEventListener('click', function(e) {

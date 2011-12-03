@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Route | Runkeeper-to-GPX</title>
+<title>Route | RunKeeper-to-GPX</title>
+<p>Thanks for using RunKeeper-to-GPX. If your download doesn’t start automatically, click the button below:</p>
 <form id="downloadForm" action="route.gpx" method="post">
 	<input type="hidden" id="routeJson" name="json" value="<%=h @json %>">
 	<input type="submit" value="Download">
 </form>
+<p><a href="/">&larr; back to the front page</a></p>
+<small>RunKeeper-to-GPX was developed by Hyzkia and is not affiliated with RunKeeper.</small>
 <iframe src="iframe.html" style="display: none">
