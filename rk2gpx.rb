@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'sinatra'
 require 'json'
 require 'haml'
+require 'rack-canonical-host'
 
 class Route
 	attr :title,  true
