@@ -31,6 +31,10 @@ end
 
 set :erb, :layout => :'layout.html'
 
+if settings.environment == :production
+	use Rack::CanonicalHost, 'rk2gpx.hyzkia.com'
+end
+
 helpers do
   include Rack::Utils
   alias_method :h, :escape_html
