@@ -1,35 +1,11 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'sinatra'
-require 'json'
 require 'haml'
 require 'rack-canonical-host'
+require 'app/rk2gpx'
 
-class Route
-	attr :title,  true
-	attr :points, true
-
-	def self.from_json(json)
-		model = JSON.parse(json)
-		route = Route.new
-		route.title  = model['title']
-		route.points = model['points'].map do |dp|
-			wp = Waypoint.new
-			wp.lat  = dp['latitude']
-			wp.long = dp['longitude']
-			wp.elevation = dp['altitude']
-			wp
-		end
-		route
-	end
-end
-
-class Waypoint
-	attr :lat, true
-	attr :long, true
-	attr :elevation, true
-end
-
+set :root, File.dirname(__FILE__) + '/..'
 set :erb, :layout => :'layout.html'
 
 if settings.environment == :production

@@ -1,3 +1,3 @@
-require './rk2gpx'
+require './app/site'
 
 run Sinatra::Application
