@@ -9,7 +9,13 @@
 <section class="main">
 	<%= yield %>
 	<hr>
-	<small>&copy; <a href="http://hyzkia.com">Hyzkia</a>. This site and Hyzkia are not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.</small>
+	<form class="donate" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+		<input type="hidden" name="cmd" value="_s-xclick">
+		<input type="hidden" name="hosted_button_id" value="WFBFG4JZCVJ9N">
+		<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal — The safer, easier way to pay online.">
+		<img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<small>&copy; <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.</small>
 </section>
 
 <script src="/scripts.js"></script>

@@ -81,3 +81,8 @@ h1 a {
 	left: 1px;
 	box-shadow: none;
 }
+
+.donate {
+	float: right;
+	margin-top: 5px;
+}
