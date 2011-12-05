@@ -44,7 +44,7 @@ end
 post '/route.gpx' do
 	@json  = params[:json]
 	@route = Route.from_json(@json)
-	attachment   "#{@route.title}.gpx"
 	content_type 'application/gpx+xml', :charset => 'utf-8'
+	attachment   "#{@route.title}.gpx"
 	haml :'route.gpx'
 end
