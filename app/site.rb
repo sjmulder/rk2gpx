@@ -19,7 +19,7 @@ helpers do
   def host
   	settings.environment == :production ?
   		'rk2gpx.hyzkia.com' :
-  		'localhost:4567'
+  		'localhost:9292'
   end
 
   def bookmarklet
