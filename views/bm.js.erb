@@ -44,5 +44,6 @@
 	field.setAttribute('name', 'json');
 	field.setAttribute('value', JSON.stringify(model));
 	form.appendChild(field);
+	document.body.appendChild(form);
 	form.submit();
 })();

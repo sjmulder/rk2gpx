@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <title>Downloading | RunKeeper-to-GPX</title>
+<body>
 <script>	
 	var url = parent.document.getElementById('downloadForm').action;
 	var json = parent.document.getElementById('routeJson').value;
@@ -13,5 +14,6 @@
 	field.setAttribute('name', 'json');
 	field.setAttribute('value', json);
 	form.appendChild(field);
+	document.body.appendChild(form);
 	form.submit();
 </script>
