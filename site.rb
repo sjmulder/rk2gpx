@@ -6,7 +6,6 @@ require 'rack-canonical-host'
 require 'sinatra/r18n'
 require './rk2gpx'
 
-LANGS = %w( en nl )
 HOST = nil
 
 if settings.environment == :production
@@ -16,7 +15,7 @@ end
 use Rack::CanonicalHost, HOST unless HOST.nil?
 
 set :erb, :layout => :'layout.html'
-set :default_locale, 'en-gb'
+set :default_locale, 'en'
 
 helpers do
   include Rack::Utils
