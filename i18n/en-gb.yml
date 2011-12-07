@@ -1,0 +1,13 @@
+ads:
+  ad1:
+    title: Born to Run
+    text: An epic adventure that began with one simple question
+    url: 'http://www.amazon.co.uk/gp/product/1861978774/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=runtogpx-21&linkCode=as2&camp=1634&creative=6738&creativeASIN=1861978774'
+  ad2:
+    title: Tired of clicking?
+    text: Don’t manually add your activies
+    url: 'http://www.amazon.co.uk/gp/product/B0025UHKNS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=runtogpx-21&linkCode=as2&camp=1634&creative=6738&creativeASIN=B0025UHKNS'
+  ad3:
+    title: Be Visible
+    text: It is dangerous to go alone. Take this!
+    url: 'http://www.amazon.co.uk/gp/product/B000WXQX6A/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&tag=runtogpx-21&linkCode=as2&camp=1634&creative=6738&creativeASIN=B000WXQX6A'

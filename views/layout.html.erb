@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>RunKeeper-to-GPX</title>
-<meta name="description" content="Convert your RunKeeper routes to GPX for use on your Garmin or other mapping device.">
+<title><%= t.layout.title %></title>
+<meta name="description" content="<%= t.layout.description %>">
 <link rel="stylesheet" href="/style.css">
 
-<h1><a href="/">RunKeeper-to-GPX</a></h1>
+<h1><a href="/"><%= t.layout.title %></a></h1>
 
 <section class="main">
 	<%= yield %>
 	<hr>
   <span class="donate">
-    <a href="http://tiptheweb.org/tip/" class="ttw-button ttw-button-large">Tip</a>
+    <a href="http://tiptheweb.org/tip/" class="ttw-button ttw-button-large"><%= t.layout.tip %></a>
 	</span>
-  <small>&copy; <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.</small>
+  <small><%= t.layout.legal %></small>
 </section>
 
 <section class="links">
   <ul>
     <li>
-      <a href="http://www.amazon.com/gp/product/0307279189/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0307279189">
-        <h3>Born to Run</h3>
-        <p>An epic adventure that began with one simple question</p>
+      <a href="<%= t.ads.ad1.url %>">
+        <h3><%= t.ads.ad1.title %></h3>
+        <p><%= t.ads.ad1.text %></p>
       </a>
     </li>
     <li>
-      <a href="http://www.amazon.com/gp/product/B0025UHKNS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0025UHKNS">
-        <h3>Tired of clicking?</h3>
-        <p>Don’t manually add your activies</p>
+      <a href="<%= t.ads.ad2.url %>">
+        <h3><%= t.ads.ad2.title %></h3>
+        <p><%= t.ads.ad2.text %></p>
       </a>
     </li>
     <li>
-      <a href="http://www.amazon.com/gp/product/B004Z2TYTC/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004Z2TYTC">
-        <h3>Android users,</h3>
-        <p>Download RunKeeper for Android for free</p>
+      <a href="<%= t.ads.ad3.url %>">
+        <h3><%= t.ads.ad3.title %></h3>
+        <p><%= t.ads.ad3.text %></p>
       </a>
     </li>
+  </ul>
 </section>
 
-<script src="/scripts.js"></script>
+<script>
+  var bookmarklet = document.getElementById('bookmarklet');
+  if (bookmarklet) {
+    bookmarklet.addEventListener('click', function(e) {
+      alert('<%= t.home.bmhelp %>');
+      e.preventDefault();
+    }, false);  
+  }
+</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27484836-1']);

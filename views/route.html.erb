@@ -1,6 +1,6 @@
-<p>Your route should be downloading now. If it is not:</p>
+<p><%= t.route.info %></p>
 <form id="downloadForm" action="route.gpx" method="post">
 	<input type="hidden" id="routeJson" name="json" value="<%=h @json %>">
-	<input type="submit" class="downloadButton" value="Download GPX Route">
+	<input type="submit" class="downloadButton" value="<%= t.route.download %>">
 </form>
 <iframe src="iframe.html" style="display: none"></iframe>

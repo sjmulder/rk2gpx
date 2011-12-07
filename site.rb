@@ -3,13 +3,21 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 require 'rack-canonical-host'
+require 'sinatra/r18n'
 require './rk2gpx'
 
-set :erb, :layout => :'layout.html'
+LANGS = %w( en nl )
+HOST = nil
 
 if settings.environment == :production
-	use Rack::CanonicalHost, 'rk2gpx.hyzkia.com'
+	HOST = 'rk2gpx.hyzkia.com'
 end
+
+use Rack::CanonicalHost, HOST unless HOST.nil?
+use Rack::Accept
+
+set :erb, :layout => :'layout.html'
+set :default_locale, 'en-gb'
 
 helpers do
   include Rack::Utils
@@ -24,6 +32,11 @@ helpers do
   def bookmarklet
   	"(function(){var d=document,s=d.createElement('script');s.setAttribute('src','http://#{host}/bm.js');d.body.appendChild(s);})()"
   end
+
+  def with_route
+	json = params[:json]
+	json.nil? ? nil : Route.from_json(json)
+  end
 end
 
 get '/' do 
@@ -35,14 +48,12 @@ get '/bm.js' do
 end
 
 post '/route' do
-	@json  = params[:json]
-	@route = Route.from_json(@json)
+	with_route
 	erb :'route.html'
 end
 
 post '/route.gpx' do
-	@json  = params[:json]
-	@route = Route.from_json(@json)
+	with_route
 	content_type 'application/gpx+xml', :charset => 'utf-8'
 	attachment   "#{@route.title}.gpx"
 	haml :'route.gpx'

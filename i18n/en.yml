@@ -1,0 +1,29 @@
+layout:
+  title: 'RunKeeper-to-GPX'
+  description: Convert your RunKeeper routes to GPX for use on your Garmin or other mapping device.
+  tip: Tip
+  legal: '© <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.'
+
+home:
+  intro: 'Convert your <a href="http://runkeeper.com">RunKeeper</a> routes to GPX for use on your Garmin or other mapping device.'
+  explanation: '<strong>To install:</strong> drag the bookmarklet below to your bookmarks bar:'
+  bmtitle: Download GPX
+  bmhelp: Drag this to your bookmarks bar to install.
+
+route:
+  info: 'Your route should be downloading now. If it is not:'
+  download: Download GPX Route
+
+ads:
+  ad1:
+    title: Born to Run
+    text: An epic adventure that began with one simple question
+    url: 'http://www.amazon.com/gp/product/0307279189/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0307279189'
+  ad2:
+    title: Tired of clicking?
+    text: Don’t manually add your activies
+    url: 'http://www.amazon.com/gp/product/B0025UHKNS/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B0025UHKNS'
+  ad3:
+    title: Android users
+    text: Download RunKeeper for Android for free
+    url: 'http://www.amazon.com/gp/product/B004Z2TYTC/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=runtog-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B004Z2TYTC'
