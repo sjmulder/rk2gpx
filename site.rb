@@ -14,7 +14,6 @@ if settings.environment == :production
 end
 
 use Rack::CanonicalHost, HOST unless HOST.nil?
-use Rack::Accept
 
 set :erb, :layout => :'layout.html'
 set :default_locale, 'en-gb'
