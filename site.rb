@@ -3,9 +3,8 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 require 'rack-canonical-host'
-require 'app/rk2gpx'
+require './rk2gpx'
 
-set :root, File.dirname(__FILE__) + '/..'
 set :erb, :layout => :'layout.html'
 
 if settings.environment == :production
