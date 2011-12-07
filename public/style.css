@@ -89,3 +89,39 @@ h1 a {
 	float: right;
 	margin-left: 10px;
 }
+.links {
+	font-size: 10pt;
+	color: #eee;
+}
+
+.links ul {
+	list-style: none;
+	padding: 0;
+}
+
+.links li {
+	float: left;
+	width: 30%;
+	margin-left: 2%;
+}
+
+.links h3 {
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	font-size: 11pt;
+	margin-bottom: 5pt;
+}
+
+.links a {
+	color: #eee;
+	text-decoration: none;
+}
+
+.links a h3 {
+	text-decoration: underline;
+}
+
+.links a p {
+	margin-top: 5pt;
+}
