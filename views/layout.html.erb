@@ -9,12 +9,14 @@
 <section class="main">
 	<%= yield %>
 	<hr>
-	<small>&copy; <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.</small>
+  <span class="donate">
+    <a href="http://tiptheweb.org/tip/" class="ttw-button ttw-button-large">Tip</a>
+	</span>
+  <small>&copy; <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.</small>
 </section>
 
 <script src="/scripts.js"></script>
 <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27484836-1']);
   _gaq.push(['_trackPageview']);
@@ -24,5 +26,15 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
+</script>
+<script>
+  (function (window, document) {
+      var ref = document.getElementsByTagName('script')[0],
+          script = document.createElement('script'),
+          secure = window.location.protocol === 'https:';
+      script.async = true;
+      script.src = secure ? 'https://secure-platform.tiptheweb.org/tip/button.js'
+                          : 'http://platform.tiptheweb.org/tip/button.js';
+      ref.parentNode.insertBefore(script, ref);
+  }(this, this.document));
 </script>
