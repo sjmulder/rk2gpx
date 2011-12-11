@@ -32,8 +32,8 @@ helpers do
   end
 
   def with_route
-	json = params[:json]
-	json.nil? ? nil : Route.from_json(json)
+  	@json = params[:json]
+  	@route = @json.nil? ? nil : Route.from_json(@json)
   end
 end
 
