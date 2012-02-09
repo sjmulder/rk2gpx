@@ -5,7 +5,7 @@ layout:
   legal: '© <a href="http://hyzkia.com">Hyzkia</a> (<a href="https://github.com/sjmulder/rk2gpx">code</a>). Niet gelieerd aan RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> voor vragen en opmerkingen.'
 
 home:
-  intro: 'Zet <a href="http://runkeeper.com">RunKeeper</a> routes om naar GPX foor gebruik met Garmin, Tom Tom en andere GPS apparaten.'
+  intro: 'Zet <a href="http://runkeeper.com">RunKeeper</a> routes om naar GPX voor gebruik met Garmin, Tom Tom en andere GPS apparaten.'
   explanation: '<strong>Gebruik:</strong> sleep onderstaande bookmarklet naar de bladwijzerbalk:'
   bmtitle: Download GPX
   bmhelp: Sleep dit naar de bladwijzerbalk om te installeren.
