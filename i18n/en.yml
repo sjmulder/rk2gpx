@@ -2,7 +2,7 @@ layout:
   title: 'RunKeeper-to-GPX'
   description: Convert your RunKeeper routes to GPX for use on your Garmin or other mapping device.
   tip: Tip
-  legal: '© <a href="http://hyzkia.com">Hyzkia</a>. Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.'
+  legal: '© <a href="http://hyzkia.com">Hyzkia</a> (<a href="https://github/sjmulder/rk2gpx">source</a>). Not affiliated with or endorsed by RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> your comments, questions, etc.'
 
 home:
   intro: 'Convert your <a href="http://runkeeper.com">RunKeeper</a> routes to GPX for use on your Garmin or other mapping device.'

@@ -2,7 +2,7 @@ layout:
   title: 'RunKeeper-to-GPX'
   description: 'Ze RunKeeper routes om naar GPX voor gebruik op Garmin, Tom Tom en andere GPS apparaten.'
   tip: Geef een fooi
-  legal: '© <a href="http://hyzkia.com">Hyzkia</a>. Niet gelieerd aan RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> voor vragen en opmerkingen.'
+  legal: '© <a href="http://hyzkia.com">Hyzkia</a> (<a href="https://github/sjmulder/rk2gpx">code</a>). Niet gelieerd aan RunKeeper. <a href="mailto:contact+rk2gpx@hyzkia.com">Email</a> voor vragen en opmerkingen.'
 
 home:
   intro: 'Zet <a href="http://runkeeper.com">RunKeeper</a> routes om naar GPX foor gebruik met Garmin, Tom Tom en andere GPS apparaten.'
